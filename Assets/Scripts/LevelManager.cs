@@ -6,8 +6,8 @@ public class LevelManager : MonoBehaviour {
 	public float autoLoadNextLevelAfter;
 
 	void Start(){
-		if (autoLoadNextLevelAfter == 0) {
-			Debug.Log ("Level auto load disabled");
+		if (autoLoadNextLevelAfter <= 0) {
+			Debug.Log ("Level auto load disabled, use a positive number in seconds");
 		} else {
 			Invoke ("LoadNextLevel", autoLoadNextLevelAfter);
 		}
@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour {
 
 		// Load the next level based on the current load level plus 1
 		Application.LoadLevel(Application.loadedLevel+1);
-		float fadeTime = GameObject.Find ("Image").GetComponent<Fading> ().BeginFade (1);
+		//float fadeTime = GameObject.Find ("Panel").GetComponent<Fading> ().BeginFade (1);
 	}
 
 }
