@@ -28,10 +28,6 @@ public class Attacker : MonoBehaviour {
 
 	//Called from the called once per frame
 	public void StrikeCurrentTarget(float damage){
-		//if (currentTarget) {
-		//Debug.Log ("Strike target " + currentTarget.name);
-		//currentTarget.GetComponent<Health> ().takingDamage (damage);
-		//}
 		if (currentTarget) {
 			Health health = currentTarget.GetComponent<Health>();
 			if(health){
