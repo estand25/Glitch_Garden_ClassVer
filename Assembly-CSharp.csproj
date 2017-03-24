@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attacker.cs" />
+     <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\Cactus.cs" />
+     <Compile Include="Assets\Scripts\DefenderSpawer.cs" />
      <Compile Include="Assets\Scripts\Defenders.cs" />
      <Compile Include="Assets\Scripts\FadeIn.cs" />
      <Compile Include="Assets\Scripts\Fading.cs" />
@@ -63,9 +65,9 @@
      <Compile Include="Assets\Scripts\Projectiles.cs" />
      <Compile Include="Assets\Scripts\SetStartVolume.cs" />
      <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Shredder.cs" />
      <Compile Include="Assets\Scripts\Stone.cs" />
      <Compile Include="Assets\Scripts\Trophy.cs" />
-     <Compile Include="Assets\Shredder.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity 4.x/Editor/Data/UnityExtensions/Unity/GUISystem/4.7.2/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>

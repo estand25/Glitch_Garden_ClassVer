@@ -6,12 +6,10 @@ public class Attacker : MonoBehaviour {
 	[Range(-1f,1.5f)]
 	private float currentSpeed;
 	private GameObject currentTarget;
-	private float myHealth;
 	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
-		myHealth = GetComponent<Health> ().health();
 		animator = GetComponent<Animator> ();
 	}
 	
