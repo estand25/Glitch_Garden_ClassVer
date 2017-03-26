@@ -56,7 +56,6 @@
      <Compile Include="Assets\Scripts\Fox.cs" />
      <Compile Include="Assets\Scripts\Gnome.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Hit.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Lizard.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
@@ -66,6 +65,7 @@
      <Compile Include="Assets\Scripts\SetStartVolume.cs" />
      <Compile Include="Assets\Scripts\Shooter.cs" />
      <Compile Include="Assets\Scripts\Shredder.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\Stone.cs" />
      <Compile Include="Assets\Scripts\Trophy.cs" />
  <Reference Include="UnityEngine.UI">

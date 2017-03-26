@@ -3,11 +3,21 @@ using System.Collections;
 
 public class DefenderSpawer : MonoBehaviour {
 	public Camera myCamera;
+	private GameObject parent;
+
+	void Start(){
+		parent = GameObject.Find ("Defenders");
+		
+		if (!parent) {
+			parent = new GameObject("Defenders");
+		}
+	}
 
 	void OnMouseDown(){
 		Vector2 rawPos = CalculateWorldPointOfMouseClick ();
 		Vector2 roundedPos = SnapToGrid (rawPos);
-		Instantiate (Button.selectedDefender, roundedPos,Quaternion.identity);
+		GameObject defender = Instantiate (Button.selectedDefender, roundedPos, Quaternion.identity) as GameObject;
+		defender.transform.parent = parent.transform;
 	}
 
 	Vector2 SnapToGrid(Vector2 rawWorldPos){
